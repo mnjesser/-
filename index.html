@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرجل العتيق </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div id="particles-js"></div>
+    
+    <!-- Music Player -->
+    <audio id="bgMusic" loop>
+        <source src="music/2 Minute Timer - Relaxing Music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="restaurant-name">
+            <h1>المرجل العتيق</h1>
+            <p class="welcome-text">مرحباً بكم في مطعمنا</p>
+        </div>
+        <button id="musicBtn" class="music-btn pulse">
+            <i class="fas fa-music"></i>
+            <span>تشغيل الموسيقى</span>
+        </button>
+    </header>
+
+    <!-- Split Menu Section -->
+    <main class="split-menu">
+        <!-- Arabic Menu -->
+        <section class="menu-half arabic-menu">
+            <h3 class="menu-title">قائمة الطعام</h3>
+            <div class="menu-slider">
+                <div class="slide active">
+                    <img src="images/menuarb1.jpg" alt="قائمة الطعام بالعربية">
+                </div>
+                <div class="slide">
+                    <img src="images/menuar2.jpg" alt="قائمة الطعام بالعربية">
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </section>
+
+        <!-- English Menu -->
+        <section class="menu-half english-menu">
+            <h3 class="menu-title">Our Menu</h3>
+            <div class="menu-slider">
+                <div class="slide active">
+                    <img src="images/menueng1.jpg" alt="English Menu">
+                </div>
+                <div class="slide">
+                    <img src="images/menueng2.jpg" alt="English Menu">
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </section>
+    </main>
+
+   <!-- Location Map -->
+<section class="location-section">
+    <h2 class="section-title">موقعنا | Location</h2>
+    <div class="map-container" id="animatedMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.071090866119!2d58.197523!3d23.627698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzM5LjciTiA1OMKwMTEnNTEuMSJF!5e0!3m2!1sen!2som!4v1620000000000!5m2!1sen!2som" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-overlay"></div>
+    </div>
+</section>
+
+    <!-- Contact Cards -->
+    <section class="contact-section">
+        <h2 class="section-title">تواصل معنا | Contact Us</h2>
+        <div class="contact-cards">
+            <!-- WhatsApp Order Card -->
+            <div class="contact-card whatsapp-card" id="whatsappCard">
+                <div class="card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>اطلب عبر واتساب</h3>
+                <h4>Order via WhatsApp</h4>
+                <a href="https://chat.whatsapp.com/C9ryLseON2iIUbqDygQR4v?mode=r_c" class="card-btn pulse">ارسل طلبك الآن</a>
+                <div class="pulse-effect"></div>
+            </div>
+
+            <!-- WhatsApp Order Card -->
+            <div class="contact-card whatsapp-card2" id="whatsapp-card2">
+                <div class="card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>اطلب عبر واتساب</h3>
+                <h4>Order via WhatsApp</h4>
+                <a href="https://chat.whatsapp.com/K5Pv9zlgyFN1J4VujwR88b?mode=r_c" class="card-btn pulse">ارسل طلبك الآن</a>
+                <div class="pulse-effect"></div>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="contact-card instagram-card" id="instagramCard">
+                <div class="card-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3>صفحتنا على إنستغرام</h3>
+                <h4>Our Instagram</h4>
+                <a href="https://www.instagram.com/doubel2x/?next=%2F" class="card-btn">زيارة الصفحة</a>
+                <div class="shine-effect"></div>
+            </div>
+
+            <!-- Gmail Card -->
+        <!--    <div class="contact-card gmail-card" id="gmailCard">
+                <div class="card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>الشكاوى والاقتراحات</h3>
+                <h4>Complaints & Suggestions</h4>
+                <a href="mailto:info@oldcauldron.com" class="card-btn">إرسال بريد</a>
+                <div class="ripple-effect"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <p>©2025 المرجل العتيق. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--this work made by "Manai Jesser"-->
